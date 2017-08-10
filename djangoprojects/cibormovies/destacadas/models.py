@@ -7,11 +7,11 @@ class author(models.Model):
     surname=models.CharField(max_lenght=50,help_text='Ingrese el apellido del author: ')
     bday=models.DateField(help_text='Selecciona la fecha de nacimiento: ')
     genere=models.CharField(max_lenght=50,help_text='Ingrese su genero: ' choices=generes)
-    email=models.EmailField(help_text='Escriba su e-mail: ')
+    email=models.EmailField(help_text='Ingrese su e-mail: ')
 
 class post(models.Model)
 
-    title=models.CharField(max_lenght=50,help_text='Ingrese el titulo de la pelicula: ')
+    title=models.CharField(max_lenght=50,help_text='Titulo de la pelicula: ')
     company=models.CharField(max_lenght=50,help_text='Nombre de la compañia productora: ')
     pubdate=models.DateField(help_text='Fecha de pelicula: ')
     director=models.CharField(max_lenght=50,help_text='Director de la pelicula: ')
